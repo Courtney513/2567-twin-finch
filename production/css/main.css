@@ -1,6 +1,28 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/*==============TYPOGRAPHY===============*/
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+/*==============TYPOGRAPHY===============*/
+
+/*===============NAV BAR==================*/
+nav ul li {
+	display: inline-block;
+}
+a {
+	color: #563A19;
+	text-decoration: none;
+}
+a:hover {
+	color: #971E1F;
+}
+/*===============NAV BAR==================*/
+
+
+
+/*==============RESPONSIVE GRID===============*/
 *, *:after, *:before {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -107,8 +129,8 @@
 .col-1-2 {
 	width: 50%;
 }
-
 .col-1-1 {
 	width: 100%;
 }
 }
+/*==============RESPONSIVE GRID===============*/
