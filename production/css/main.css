@@ -1,15 +1,43 @@
 @charset "UTF-8";
 /* CSS Document */
 
+
 /*==============TYPOGRAPHY===============*/
 * {
 	font-family: 'Open Sans', sans-serif;
+	color: #563A19;
+}
+h2 {
+	font-size: 5em;
+	font-weight: bold;
+}
+h3 {
+	font-size: 1.875em;
+	font-weight: bold;
+}
+p {
+	font-size: 2.5em;
+	line-height: 1.5em;
+	font-weight: 400;
 }
 /*==============TYPOGRAPHY===============*/
 
 /*===============NAV BAR==================*/
-nav ul li {
+#header {
+	width: 100%;
+	height: 6.5625em;
+	background-color: #E8DACB;
+}
+nav li {
 	display: inline-block;
+	font-size: 1.8em;
+}
+
+[class*='col-']:last-of-type {
+	padding-right: 0;
+}
+nav ul {
+	float: right;
 }
 a {
 	color: #563A19;
@@ -17,6 +45,12 @@ a {
 }
 a:hover {
 	color: #971E1F;
+}
+#logo {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
 }
 /*===============NAV BAR==================*/
 
