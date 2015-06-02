@@ -1,61 +1,101 @@
 @charset "UTF-8";
 /* CSS Document */
 
-
+body { /*for rems*/
+	font-size: 16pt;
+}
+.center-block { /*for centering*/
+	float: none !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+.hidden-lg { /*for resizing*/
+	display: none;
+}
 /*==============TYPOGRAPHY===============*/
 * {
 	font-family: 'Open Sans', sans-serif;
-	color: #563A19;
+	color: #563A19; /*brown*/
 }
 h2 {
-	font-size: 5em;
+	font-size: 3rem;
 	font-weight: bold;
 }
 h3 {
-	font-size: 1.875em;
+	font-size: 1.875rem;
 	font-weight: bold;
 }
-p {
-	font-size: 2.5em;
-	line-height: 1.5em;
+.p-about {
+	font-size: 1.4rem;
+	line-height: 2.5rem;
 	font-weight: 400;
+	margin-bottom: 3.125rem;
+}
+#blockquote {
+	color: #E8DACB; /*beige*/
+	padding-top: 18.75rem;
+	padding-left: 1.75rem;
+	margin-bottom: 0;
+}
+cite {
+	color: #E8DACB; /*beige*/
+	float: left;
+	margin-left: 250px;
 }
 /*==============TYPOGRAPHY===============*/
 
 /*===============NAV BAR==================*/
 #header {
 	width: 100%;
-	height: 6.5625em;
-	background-color: #E8DACB;
+	height: 6.5625rem;
+	background-color: #E8DACB; /*beige*/
 }
 nav li {
 	display: inline-block;
-	font-size: 1.8em;
+	font-size: 1.3rem;
+	margin-right: 1rem;
 }
-
+}
 [class*='col-']:last-of-type {
 	padding-right: 0;
 }
 nav ul {
-	float: right;
+	position: relative;
+	bottom: 5.8125rem;
+	left: 50rem;
 }
 a {
 	color: #563A19;
 	text-decoration: none;
 }
 a:hover {
-	color: #971E1F;
+	color: #971E1F; /*red*/
 }
 #logo {
-	position: absolute;
-	left: 0;
-	top: 0;
-	z-index: -1;
+	width: 4.78125rem;
+	height: 6.1875rem;
+	margin-left: 10.8125rem;
 }
 /*===============NAV BAR==================*/
 
+/*===============HERO=====================*/
+#hero {
+	background-image: url(../../graphics/coffee-treats-book-resized.png);
+	width: 64rem;
+	height: 42.6875rem;
+	position: relative;
+	bottom: 1.3125rem;
+}
+/*===============HERO====================*/
 
-
+/*===============ROASTS====================*/
+.roast-pull-right {
+	margin-left: 17.1875rem;
+}
+.roast-center {
+	margin-left: 413.250px;
+}
+/*===============ROASTS====================*/
 /*==============RESPONSIVE GRID===============*/
 *, *:after, *:before {
 	-webkit-box-sizing: border-box;
@@ -68,8 +108,8 @@ a:hover {
 }
 .row {
 	width: 100%;
-	padding-bottom: 20px;
-	padding-right: 50px;
+	padding-bottom: 1.25rem;
+	padding-right: 3.125rem;
 }
 .row:after {
 	content: "";
@@ -78,7 +118,7 @@ a:hover {
 }
 [class*='col-'] {
 	float: left;
-	padding: 0 20px 20px 0;
+	padding: 0 1.25rem 1.25rem 0;
 }
 [class*='col-']:last-of-type {
 	padding-right: 0;
