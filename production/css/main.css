@@ -9,9 +9,6 @@ body { /*for rems*/
 	margin-left: auto;
 	margin-right: auto;
 }
-.hidden-lg { /*for resizing*/
-	display: none;
-}
 /*==============TYPOGRAPHY===============*/
 * {
 	font-family: 'Open Sans', sans-serif;
@@ -36,66 +33,325 @@ h3 {
 	padding-top: 18.75rem;
 	padding-left: 1.75rem;
 	margin-bottom: 0;
+	font-weight: 700;
 }
 cite {
 	color: #E8DACB; /*beige*/
 	float: left;
 	margin-left: 250px;
+	font-weight: bolder;
+}
+.roast-links {
+	font-weight: bold;
 }
 /*==============TYPOGRAPHY===============*/
 
 /*===============NAV BAR==================*/
 #header {
+	position: fixed;
+	top: 0;
 	width: 100%;
 	height: 6.5625rem;
 	background-color: #E8DACB; /*beige*/
+	z-index: 1;
 }
 nav li {
 	display: inline-block;
 	font-size: 1.3rem;
 	margin-right: 1rem;
 }
-}
 [class*='col-']:last-of-type {
 	padding-right: 0;
 }
 nav ul {
 	position: relative;
-	bottom: 5.8125rem;
-	left: 50rem;
+	bottom: 8.125rem;
+	left: 48.5rem;
+	text-transform: uppercase;
 }
 a {
 	color: #563A19;
 	text-decoration: none;
+	display: inline-block;
+	height: auto;
+	width:auto;
 }
 a:hover {
 	color: #971E1F; /*red*/
 }
 #logo {
-	width: 4.78125rem;
-	height: 6.1875rem;
-	margin-left: 10.8125rem;
+	width: 7.5rem;
+	height: 10rem;
+	position: relative;
+	bottom: 1.75rem;
+	left: 8rem;
 }
 /*===============NAV BAR==================*/
 
 /*===============HERO=====================*/
 #hero {
-	background-image: url(../../graphics/coffee-treats-book-resized.png);
-	width: 64rem;
-	height: 42.6875rem;
-	position: relative;
-	bottom: 1.3125rem;
+	background: url(../../graphics/coffee-treats-book-resized.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 /*===============HERO====================*/
 
 /*===============ROASTS====================*/
 .roast-images {
-	width:10rem;
+	width: 10rem;
 }
 .roast-images:hover {
-	width:15rem;	
+	width: 20rem;
+}
+.add-to-cart {
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+.add-to-cart:hover {
+	color: #971E1F; /*red*/
+}
+.add-to-cart:before {
+	content: "+";
+	text-align: center;
+	font-size: 1rem;
+	color: #E8DACB; /*beige*/
+	display: inline-block;
+	width: 1.5625rem;
+	height: 1.5625rem;
+	background-color: #563A19; /*brown*/
+	border-radius: .78125rem;
+	-moz-border-radius: .78125rem;
+	-webkit-border-radius: .78125rem;
+	vertical-align: text-top
+}
+#badge:before {
+	content: "98";
+	text-align: center;
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: #971E1F; /*red*/
+	display: inline-block;
+	width: 4rem;
+	height: 4rem;
+	background-color: #E8DACB; /*beige*/
+	border-radius: .78125rem;
+	-moz-border-radius: .78125rem;
+	-webkit-border-radius: .78125rem;
+}
+#featured-roast-red {
+	color: #971E1F; /*red*/
+	font-weight: 600;
 }
 /*===============ROASTS====================*/
+/*===============ABOUT====================*/
+#about {
+	width: 100%;
+	height: auto;
+	background-color: #E8DACB; /*beige*/
+}
+#about-copy {
+	Width: 80%;
+	margin: 0 auto;
+}
+/*===============ABOUT====================*/
+/*===============CONTACTUS====================*/
+#google-map {
+	width: 31.25rem;
+	height: 23.75rem;
+}
+#location {
+	font-weight: bold;
+	font-size: 1.3rem;
+	margin-left: 2rem;
+}
+Form { /*======FORM========*/
+	width: 30rem;
+	border: .0625rem solid white;
+	border-radius: .625rem;
+	height: 50rem;
+	position: relative;
+	bottom: 1.1rem;
+}
+label {
+	display: none;
+  color: white;
+  font-size: .75rem;
+  margin-left: 4.5rem;
+  font-weight: 600;
+}
+input {
+	width: 15rem;
+	height: 3rem;
+	border: .0625rem solid #E8DACB; /*beige*/
+	border-radius: .625rem;
+	margin-top: 1rem;
+	margin-left: 10rem;
+	background-color: #E8DACB; /*beige*/
+	color: #971E1F; /*red*/
+	font-size: .75rem;
+	padding-left: 1rem;
+}
+input [type="radio"] {
+	display: inline;
+}
+/*========change the color of the placeholder text within the form=======*/
+::-webkit-input-placeholder {
+color: #971E1F; /*red*/
+ border-radius: .625rem;
+ border: .0625rem solid #E8DACB; /*beige*/
+}
+
+:-moz-placeholder { /* Firefox 18- */
+color: #971E1F; /*red*/
+ border-radius: .625rem;
+ border: .0625rem solid #E8DACB; /*beige*/
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+color: #971E1F; /*red*/
+ border-radius: .625rem;
+ border: .0625rem solid #E8DACB; /*beige*/
+}
+
+:-ms-input-placeholder {
+color: #971E1F; /*red*/
+ border-radius: .625rem;
+ border: .0625rem solid #E8DACB; /*beige*/
+}
+/*========change the color of the placeholder text=======*/
+textarea {
+	display: block;
+	width: 15rem;
+	height: 13rem;
+	margin-top: 1rem;
+	margin-left: 10rem;
+	border: .0625rem solid #E8DACB; /*beige*/
+	border-radius: .625rem;
+	background-color: #E8DACB; /*beige*/
+	color: #971E1F;
+	font-size: .75rem;
+	padding-left: 1rem;
+}
+/*==remove the color of the outline when you click on box==*/
+textarea:focus, input:focus, button:focus {
+	border: .0625rem solid #E8DACB; /*beige*/
+	outline: none;
+}
+/*==remove the color of the outline when you click on box==*/
+
+
+button {
+	width: 15rem;
+	height: 3rem;
+	border: .0625rem solid #971E1F; /*red*/
+	border-radius: .625rem;
+	padding: 1rem;
+	background-color: #971E1F; /*red*/
+	font-size: 1rem;
+	font-weight: 800;
+	color: #E8DACB; /*beige*/
+	text-align: center;
+	margin-left: 9.85rem;
+	margin-top: 1rem;
+}
+/*======FORM========*/
+/*===============CONTACTUS====================*/
+/*===============SOCIAL MEDIA====================*/
+#tumblr-feed, #twitter-feed {
+	width: 25rem;
+	height: 15rem;
+	background-color: #563A19; /*brown*/
+}
+#twitter-feed {
+	float: right;
+}
+/*===============SOCIAL MEDIA====================*/
+/*===============FOOTER====================*/
+#footer {
+	background-color: #E8DACB; /*beige*/
+}
+/*======SOCIAL ICONS========*/
+footer ul {
+	list-style: none;
+	width: 3rem;
+	height: 3rem;
+}
+footer li {
+	display: inline-block;
+}
+#facebook {
+	background: url(../imgs/facebook.png) no-repeat 0 0;
+	background-size: cover;
+}
+#facebook:hover {
+	background: url(../imgs/facebook.png) no-repeat;
+	background-size: cover;
+}
+#twitter {
+	background: url(../imgs/twitter.png)0 0;
+	background-size: cover;
+}
+#twitter:hover {
+	background: url(../imgs/twitter.png)0 0;
+	background-size: cover;
+}
+#google {
+ background:url(../imgs/google.png) width: 0;
+ 	background-size: cover;
+
+}
+#google:hover {
+	background-image: url(../imgs/google.png)
+		background-size: cover;
+
+}
+/*======SOCIAL ICONS========*/
+
+/*======HALF-FORM========*/
+
+footer form {
+	  border: .0625rem solid #E8DACB;
+  border-radius: .625rem;
+  padding: 1rem;
+}
+footer label {
+	display: inline-block;
+	color: #E8DACB;
+	font-size: .75rem;
+	margin-left: 4.5rem;
+	font-weight: 600;
+}
+footer input {
+	 width: 15rem;
+  height: 3rem;
+  margin-top: 1rem;
+}
+footer button {
+	display: inline-block;
+	border: .0625rem solid #971E1F;
+	border-radius: .625rem;
+	padding: 1rem;
+	background-color: #971E1F;
+	font-size: 1rem;
+	font-weight: 800;
+	color: #E8DACB;
+	margin-left: 0;
+	width: auto;
+	height: auto;
+	float: right;
+}
+/*======HALF-FORM========*/
+#footer {
+position: relative;
+	bottom: 0;
+	width: 100%;
+	height: 6.5625rem;
+	background-color: #E8DACB; /*beige*/
+}
+/*===============FOOTER====================*/
+
 /*==============RESPONSIVE GRID===============*/
 *, *:after, *:before {
 	-webkit-box-sizing: border-box;
@@ -170,8 +426,11 @@ a:hover {
 }
 
 @media screen and (max-width:768px) {
+<!--
+=========columns==========
+-->
 .col-1-12 {
-	width: 25%;
+ width: 25%;
 }
 .col-1-11 {
 	width: 33.33%;
@@ -201,10 +460,257 @@ a:hover {
 	width: 50%;
 }
 .col-1-2 {
-	width: 50%;
+	width: 100%;
 }
 .col-1-1 {
 	width: 100%;
 }
+<!--
+=========columns==========
+-->
+.responsive-100 {
+width:100%;
+}
+.hidden-lg { /*for resizing*/
+	display: none;
+}
+.show {
+	font-weight: bold;
+}
+.center-content {
+	margin-left: 6rem;
+}
+/*===============RESIZED NAV BAR==================*/
+#header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 6.5625rem;
+	background-color: #E8DACB; /*beige*/
+	z-index: 1;
+}
+nav li {
+	display: inline-block;
+	font-size: 1rem;
+	margin-right: 1rem;
+}
+[class*='col-']:last-of-type {
+	padding-right: 0;
+}
+nav ul {
+	position: absolute;
+	top: 1.9rem;
+	left: 17rem;
+	text-transform: uppercase;
+}
+a {
+	color: #563A19;
+	text-decoration: none;
+	display: inline-block;
+	height: auto;
+}
+a:hover {
+	color: #971E1F; /*red*/
+}
+#logo {
+	width: 7.5rem;
+	height: 10rem;
+	position: relative;
+	bottom: 1.65rem;
+	left: 4rem;
+}
+/*===============RESIZED NAV BAR==================*/
+/*===============ROASTS====================*/
+.roast-images {
+	width: 20rem;
+	align-content: center;
+}
+.add-to-cart {
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+.add-to-cart:hover {
+	color: #971E1F; /*red*/
+}
+.add-to-cart:before {
+	content: "+";
+	text-align: center;
+	font-size: 1rem;
+	color: #E8DACB; /*beige*/
+	display: inline-block;
+	width: 1.5625rem;
+	height: 1.5625rem;
+	background-color: #563A19; /*brown*/
+	border-radius: .78125rem;
+	-moz-border-radius: .78125rem;
+	-webkit-border-radius: .78125rem;
+	vertical-align: text-top
+}
+#badge:before {
+	content: "98";
+	text-align: center;
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: #971E1F; /*red*/
+	display: inline-block;
+	width: 4rem;
+	height: 4rem;
+	background-color: #E8DACB; /*beige*/
+	border-radius: .78125rem;
+	-moz-border-radius: .78125rem;
+	-webkit-border-radius: .78125rem;
+}
+#featured-roast-red {
+	color: #971E1F; /*red*/
+	font-weight: 600;
+}
+/*===============ROASTS====================*/
+Form { /*======FORM========*/
+	width: 30rem;
+	border: .0625rem solid white;
+	border-radius: .625rem;
+	height: 50rem;
+	position: relative;
+	bottom: 1.1rem;
+}
+label {
+	display: block;
+	float: left;
+	width: 10rem;
+	text-align: right;
+	margin-right: .5rem;
+	color: #971E1F; /*red*/
+	font-size: .75rem;
+}
+input {
+	width: 15rem;
+	height: 3rem;
+	border: .0625rem solid #E8DACB; /*beige*/
+	border-radius: .625rem;
+	margin-top: 1rem;
+	margin-left: 10rem;
+	background-color: #E8DACB; /*beige*/
+	color: #971E1F; /*red*/
+	font-size: .75rem;
+	padding-left: 1rem;
+}
+input [type="radio"] {
+	display: inline;
+}
+/*========change the color of the placeholder text within the form=======*/
+::-webkit-input-placeholder {
+color: #971E1F; /*red*/
+ border-radius: .625rem;
+ border: .0625rem solid #E8DACB; /*beige*/
+}
+
+:-moz-placeholder { /* Firefox 18- */
+color: #971E1F; /*red*/
+ border-radius: .625rem;
+ border: .0625rem solid #E8DACB; /*beige*/
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+color: #971E1F; /*red*/
+ border-radius: .625rem;
+ border: .0625rem solid #E8DACB; /*beige*/
+}
+
+:-ms-input-placeholder {
+color: #971E1F; /*red*/
+ border-radius: .625rem;
+ border: .0625rem solid #E8DACB; /*beige*/
+}
+/*========change the color of the placeholder text=======*/
+textarea {
+	display: block;
+	width: 15rem;
+	height: 13rem;
+	margin-top: 1rem;
+	margin-left: 10rem;
+	border: .0625rem solid #E8DACB; /*beige*/
+	border-radius: .625rem;
+	background-color: #E8DACB; /*beige*/
+	color: #971E1F;
+	font-size: .75rem;
+	padding-left: 1rem;
+}
+/*==remove the color of the outline when you click on box==*/
+textarea:focus, input:focus, button:focus {
+	border: .0625rem solid #E8DACB; /*beige*/
+	outline: none;
+}
+/*==remove the color of the outline when you click on box==*/
+
+
+button {
+	width: 15rem;
+	height: 3rem;
+	border: .0625rem solid #971E1F; /*red*/
+	border-radius: .625rem;
+	padding: 1rem;
+	background-color: #971E1F; /*red*/
+	font-size: 1rem;
+	font-weight: 800;
+	color: #E8DACB; /*beige*/
+	text-align: center;
+	margin-left: 9.75rem;
+	margin-top: 1rem;
+}
+/*======FORM========*/
+/*===============SOCIAL MEDIA====================*/
+#tumblr-feed, #twitter-feed {
+	width: 25rem;
+	height: 15rem;
+	background-color: #563A19; /*brown*/
+	margin-bottom: 4rem;
+	margin-right: 10.2rem;
+}
+#twitter-feed {
+	margin-right: 3.7rem;
+}
+/*===============SOCIAL MEDIA====================*/
+#google-map {
+	width: 100%;
+	height: 23.75rem;
+	margin-left:2rem;
 }
 /*==============RESPONSIVE GRID===============*/
+#footer {
+	background-color: #E8DACB; /*beige*/
+}
+/*======HALF-FORM========*/
+
+footer form {
+	  border: .0625rem solid #E8DACB;
+  border-radius: .625rem;
+  padding: 1rem;
+}
+footer label {
+	display: none;
+  color: white;
+  font-size: .75rem;
+  margin-left: 4.5rem;
+  font-weight: 600;
+}
+footer input {
+	  width: 15rem;
+  height: 3rem;
+  margin-top: 1rem;
+}
+footer button {
+	display: inline-block;
+	border: .0625rem solid #971E1F;
+	border-radius: .625rem;
+	padding: 1rem;
+	background-color: #971E1F;
+	font-size: 1rem;
+	font-weight: 800;
+	color: #E8DACB;
+	margin-left: 0;
+	width: auto;
+	height: auto;
+	float: right;
+}
+/*======HALF-FORM========*/
+}
